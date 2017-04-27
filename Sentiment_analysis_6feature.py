@@ -76,13 +76,7 @@ for row in csv_f:
     score["Vigour"] = count["Lively"] + count["Active"] + count["Energetic"] + count["Cheerful"] + \
                          count["Alert"] + count["Full of Pep"] + \
                          count["Carefree"]+count["Vigorous"]
-    final={}
-
-    '''final["Happy"]=
-    final["Alert"]=
-    final["Kind"]=
-    final["Calm"]=
-    '''
+   
 
     #writting sentiment score to output file.
     writer.writerow( {'publish_date': row[1], 'Date': row[2], 'Tension': score["Tension"], 'Depression': score["Depression"],\
